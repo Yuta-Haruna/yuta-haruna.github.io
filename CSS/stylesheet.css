@@ -26,3 +26,23 @@ tr:hover {
 td:first-child {
     text-align: left;
 }
+
+/* 左右分割 */
+#child1 {
+    background-color: lightblue;
+    width: 25%;
+}
+#child2 {
+    background-color: lightgreen;
+}
+@media (min-width: 600px) {
+    #parent {
+        display: flex;
+    }
+    #child1 {
+        flex-grow: 1;
+    }
+    #child2 {
+        flex-grow: 1;
+    }
+}
