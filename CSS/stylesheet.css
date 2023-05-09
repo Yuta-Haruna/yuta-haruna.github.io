@@ -1,3 +1,9 @@
+/* 文字フォント */
+p {
+	font-family: "游明朝";
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -35,6 +41,7 @@ td:first-child {
 #child2 {
     background-color: lightgreen;
 }
+
 @media (min-width: 600px) {
     #parent {
         display: flex;
@@ -45,4 +52,9 @@ td:first-child {
     #child2 {
         flex-grow: 1;
     }
+}
+
+/* トグルボタン用 */
+#hidden-text {
+    display: block; /* 最初は表示 */
 }

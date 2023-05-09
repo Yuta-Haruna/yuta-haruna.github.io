@@ -6,21 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Haruna Yuta</title>
         <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="CSS/button.css">
+        <script src="js/script.js"></script>
     </head>
-    <body style="background-color: bisque;">
+    <!-- <body style="background-color: bisque;"> -->
+    <body style="">
         <header>
             <div style="background-color: aqua; height: 50px;">
                 <p style="text-align: center; padding-top: 10px; ">タイトルヘッダー
             </div>
         </header>
         <div id="parent">
-            <div id="child1" style="margin-right: 5%;">プロフ画像</div>
+            <div id="child1" style="margin-right: 5%;">
+                <div style="margin-left: 10%;margin-right: 10%">
+                    <img src="images/GitHubAccountIcon.png" alt="" style="width: 100%;">
+                    Yuta-Haruna
+                </div>
+            </div>
             <div id="child2" style="margin-right: 30%;">
 
                 <!-- スキル -->
                 <div>
                     <h1>保有スキル</h1>
-                    <img src="images/Salesforce.com_logo.svg" alt="" style="width: 200px;">
+                    <img src="images/Salesforce.com_logo.svg" alt="" style="width: 30%;">
+                    <div class="buttonDesign">
+                        <p onclick="toggleText()" style="font-family: Hiragino Sans W3;">〔 保有スキル 〕</p>
+                    </div>
+                    <div id="hidden-text">
+                        ここに隠れていた文章があります！
+                    </div>
                 </div>
                 <!-- 自己紹介 -->
                 <div style="padding-top:0% ">
