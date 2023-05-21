@@ -6,35 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Haruna Yuta</title>
         <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="CSS/button.css">
+        <!-- <link rel="stylesheet" type="text/css" href="CSS/button.css"> -->
         <script src="js/script.js"></script>
     </head>
-    <!-- <body style="background-color: bisque;"> -->
-    <body style="">
-        <header>
+    <body>
+        <!-- <header>
             <div style="background-color: aqua; height: 50px;">
                 <p style="text-align: center; padding-top: 10px; ">タイトルヘッダー
             </div>
-        </header>
-        <div id="parent">
-            <div id="child1" style="margin-right: 5%;">
-                <div style="margin-left: 10%;margin-right: 10%">
-                    <img src="images/GitHubAccountIcon.png" alt="" style="width: 100%;">
-                    Yuta-Haruna
-                </div>
+        </header> -->
+        <div class="sidebar">
+            <!-- サイドバー内部要素 -->
+            <div style="margin:auto; width: 80%;">
+                <img src="images/GitHubAccountIcon.png" alt="" style="width: 100%;">
+                    <h1>Yuta-Haruna</h1>
             </div>
-            <div id="child2" style="margin-right: 30%;">
-
-                <!-- スキル -->
-                <div>
-                    <div class="buttonDesign">
-                        <p onclick="toggleText()">〔 保有スキル 〕</p>
-                    </div>
-                    <div id="hidden-text">
-                        <img src="images/Salesforce.com_logo.svg" alt="" style="width: 30%;">
-                        ここに隠れていた文章があります！
-                    </div>
-                </div>
+        </div>
+        <div class="content container">
+            <!-- <div id="child2" style="margin-right: 30%;"> -->
+            <div id="child2">
                 <!-- 自己紹介 -->
                 <!-- <div style="padding-top:0%; margin-bottom: 5%; ">
                     <div class="buttonDesign">
@@ -117,9 +107,39 @@
                 <!-- 経歴(会社ごと詳細) -->
                 <div style="margin-bottom: 5%; ">
                     <h3>職務経歴</h3>
-                    <p>
+                    <h4>【所属企業ごと略歴】</h4>
+                    <ul>
+                        <li>2021～現在: Salesforceコンサル企業
+                            <ul>
+                                <li>基幹システム移行案件(要件定義～リリース): 5件</li>
+                                <li>既存システム追加改修案件(要件定義～リリース): 10件</li>
+                                <li>社内事業部横断プロジェクト: 0.1年</li>
+                                <li>製品企画: 0.1年</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>2017~2021: 大手SIer
+                            <ul>
+                                <li>Java研修: 0.2年</li>
+                                <li>リバースエンジニアリング: 0.3年</li>
+                                <li>A案件(XHTML_改修、Javaテスト): 0.4年</li>
+                                <li>B案件(基本設計、詳細設計、単体テスト、結合テスト): 0.9年</li>
+                            </ul>
+                        </li>
+                    </ul>
                     </p>
                 </div>
+                <!-- スキル -->
+                <div>
+                    <!-- <div class="buttonDesign"> -->
+                        <h3 onclick="toggleText()">保有スキル</h3>
+                    <!-- </div> -->
+                    <div id="hidden-text">
+                        <img src="images/Salesforce.com_logo.svg" alt="" style="width: 30%;">
+                        ここに隠れていた文章があります！
+                    </div>
+                </div>
+                
                 <!-- 保有資格 -->
                 <div style="margin-bottom: 5%; ">
                     <h3>保有資格</h3>
@@ -178,14 +198,34 @@
                 <!-- ポートフォリオ -->
                 <div>
                     <h3>個人作品</h3>
-                    <h4>『One Food Calory』1食単位のカロリー検索</h4>
-                    (LineBotとAWSの「Lambda」と「RDS(MySQL)」を使用し、LambdaではGolangを利用)
-                    <a href="https://github.com/Yuta-Haruna/FoodApp_Golang_LINEBOT_Lambda_RDS" style="font-size: x-large;">機能詳細はこちら
+                    <h4>
+                        <a href="https://github.com/Yuta-Haruna/FoodApp_Golang_LINEBOT_Lambda_RDS" style="font-size: x-large;">『One Food Calory』</a>
+                    </h4>
+                    <div style="margin-left: 5%;">1食単位のカロリー応答Bot
+                        <ul>
+                            <li>使用言語
+                                <ul>
+                                    <li>Golang (version go1.19)</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>使用ツール
+                                <ul>
+                                    <li>Windows</li>
+                                    <li>AWS Lambda</li>
+                                    <li>AWS VPC</li>
+                                    <li>AWS InterNetGateway</li>
+                                    <li>AWS RDS(MySQL)</li>
+                                    <li>LINE SDK</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- (LineBotとAWSの「Lambda」と「RDS(MySQL)」を使用し、LambdaではGolangを利用) -->
+                    </div>
                 </div>
-            </div>
         </div>
+        <!-- フッター -->
         <footer>
-            フッター
             <!-- 連絡先や -->
         </footer>
     </body>

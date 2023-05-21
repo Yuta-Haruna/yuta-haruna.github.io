@@ -17,7 +17,7 @@ th, td {
 }
 
 th {
-    background-color:rgb(113, 236, 177);
+    background-color:rgb(255, 153, 0);
     font-weight: bold;
 }
 
@@ -35,26 +35,71 @@ td:first-child {
 
 /* 左右分割 */
 #child1 {
-    background-color: lightblue;
-    width: 25%;
-}
-#child2 {
-    background-color: lightgreen;
-}
-
-@media (min-width: 600px) {
-    #parent {
-        display: flex;
-    }
-    #child1 {
-        flex-grow: 1;
-    }
-    #child2 {
-        flex-grow: 1;
-    }
+    width: 80%;
 }
 
 /* トグルボタン用 */
 #hidden-text {
     display: block; /* 最初は表示 */
 }
+
+/* body */
+body {
+    background: linear-gradient(to right, white, rgb(253, 223, 178));
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* 背景アニメーション用 */
+@keyframes gradientAnimation {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+/* サイドバー用 */
+.sidebar {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(255,255,255,0.9);
+    background-color: rgb(255, 153, 0);
+
+}
+@media (min-width: 48em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 18rem;
+        text-align: left;
+    }
+}
+
+/* メインコンテンツ用 */
+.content {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+    .content {
+        max-width: 38rem;
+        margin-left: 20rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .content {
+        margin-left: 22rem;
+        margin-right: 4rem;
+    }
+}
+
