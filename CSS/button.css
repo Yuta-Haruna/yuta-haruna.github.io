@@ -1,0 +1,46 @@
+/* ボタンデザイン */
+.buttonDesign p {
+    position: relative;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    padding: 10px 25px 10px 0px;
+    color: black;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Hiragino Sans W3;
+}
+
+.buttonDesign p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(107,182,255, 0.2);
+    transition: all 0.3s;
+}
+.buttonDesign p:hover::before {
+    opacity: 0;
+    transform: scale(0.4, 0.4);
+}
+.buttonDesign p::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 2px solid rgb(107,182,255, .4);
+    transform: scale(1.2, 1.2);
+}
+.buttonDesign p:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+}

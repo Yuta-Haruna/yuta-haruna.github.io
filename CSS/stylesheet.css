@@ -1,0 +1,121 @@
+/* 文字フォント */
+
+
+html {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+    html {
+        font-size: 16px;
+    }
+}
+@media (min-width: 58em) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color:rgb(255, 153, 0);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+/* 左右分割 */
+#child1 {
+    width: 80%;
+}
+
+li {
+    margin-bottom: 10px; /* 行間の具体的な値を指定 */
+}
+
+/* トグルボタン用 */
+#hidden-text {
+    display: block; /* 最初は表示 */
+}
+
+/* body */
+body {
+    background: linear-gradient(to right, white, rgb(253, 223, 178));
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* 背景アニメーション用 */
+@keyframes gradientAnimation {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+/* サイドバー用 */
+.sidebar {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(255,255,255,0.9);
+    background-color: rgb(255, 153, 0);
+
+}
+@media (min-width: 48em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 18rem;
+        text-align: left;
+    }
+}
+
+/* メインコンテンツ用 */
+.content {
+    padding-top:    4rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+    .content {
+        max-width: 38rem;
+        margin-left: 20rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 64em) {
+    .content {
+        margin-left: 22rem;
+        margin-right: 4rem;
+    }
+}
+
